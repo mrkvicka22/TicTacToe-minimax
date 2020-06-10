@@ -145,7 +145,7 @@ def play_as_cross(state):
 
             state.board_state[int(input("Type 1-9")) - 1] = X
             brd = state.board_state
-            state = BoardStateNode(brd, O, i)
+            state = BoardStateNode(brd, O, i-1)
             print(state)
         i += 1
 
